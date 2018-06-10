@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  lstNumbers=[];
+
+
+  onStartGame(num)
+  {
+    console.log('in app comp start='+num);
+    this.lstNumbers.push(num);
+  }
 }
